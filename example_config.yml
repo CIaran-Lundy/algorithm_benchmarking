@@ -10,14 +10,12 @@
 - timed_command:
         repeats: 3
         threads: 32
+        output: "time_out"
 - thread_scaling:
         repeats: 3
         threads: 1,2,4,6,8,10,12,14,16,18,20,24,28,32,64
+        output: "thread_out"
 - memory_footprint:
         repeats: 3
-- settings_optimizer:
-        threads: true
-        k-mer_length: true
-        numa: true
-
+        output: "mem_out"
 
